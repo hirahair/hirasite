@@ -145,6 +145,14 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+
+
+@media (max-width: 768px) {
+    nav ul li a {
+      color: white !important;
+    }
+  }
+
 /* Active state */
 @media (max-width: 768px) {
     /* Mobile menu styles */
