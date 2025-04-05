@@ -150,6 +150,27 @@ nav ul li a:active {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+@media (max-width: 768px) {
+    /* Mobile menu styles - fix for dropdown content */
+    nav.active {
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+    
+    nav.active ul li a {
+        color: var(--white) !important; /* Forces white text */
+        padding: 12px 0;
+        display: block;
+    }
+    
+    /* Optional: Add hover effect */
+    nav.active ul li a:hover {
+        color: var(--secondary) !important;
+    }
+}
+
+
+
+
 /* Text shadow for better visibility when transparent */
 header:not(.scrolled) nav ul li a {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
