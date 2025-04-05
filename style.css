@@ -142,12 +142,12 @@ nav ul li a {
 
 /* Hover effect */
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(150, 121, 121, 0.952);
 }
 
 /* Active state */
 nav ul li a:active {
-    background-color: rgba(216, 202, 202, 0.2);
+    background-color: rgba(238, 216, 216, 0.623);
 }
 
 @media (max-width: 768px) {
