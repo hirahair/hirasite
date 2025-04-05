@@ -146,33 +146,74 @@ nav ul li a:hover {
 }
 
 /* Active state */
-nav ul li a:active {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Text shadow for better visibility when transparent */
-header:not(.scrolled) nav ul li a {
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
-}
-
 @media (max-width: 768px) {
-    /* Mobile header always has solid background */
-    header {
-        background-color: rgba(0, 0, 0, 0.9);
+    /* Mobile menu styles */
+    nav {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        padding: 20px;
+        transition: var(--transition);
     }
     
-    /* Mobile menu styles */
+    nav.active {
+        left: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    nav ul li a {
+        color: var(--white); /* Ensure white text */
+        padding: 12px 0;
+        display: block;
+        font-size: 1.1rem;
+    }
+    
+    /* Add hover effect */
+    nav ul li a:hover {
+        color: var(--accent);
+    }
+    
+    /* Mobile menu button styles */
+    .mobile-menu-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        color: var(--white);
+        z-index: 1001;
+        background: transparent;
+        border: none;
+    }
+}
+@media (max-width: 768px) {
+    /* Ensure menu items are visible against the background */
+    nav ul li a {
+        text-shadow: none !important;
+        color: var(--white) !important;
+    }
+    
+    /* Add border between menu items */
+    nav ul li:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding-bottom: 15px;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        background-color: rgba(0, 0, 0, 0.85);
+    }
+    
     nav {
         background-color: rgba(0, 0, 0, 0.95);
     }
-    
-    /* Mobile menu button */
-    .mobile-menu-btn {
-        color: var(--white);
-        z-index: 1001;
-    }
 }
-
 /* Solid black background when scrolled */
 header.scrolled {
     background-color: var(--dark-color);
