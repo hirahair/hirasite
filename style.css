@@ -201,17 +201,17 @@ nav ul li a:hover {
     
     /* Add border between menu items */
     nav ul li:not(:last-child) {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.856);
         padding-bottom: 15px;
     }
 }
 @media (max-width: 768px) {
     header {
-        background-color: rgba(0, 0, 0, 0.85);
+        background-color: rgba(244, 235, 235, 0.85);
     }
     
     nav {
-        background-color: rgba(0, 0, 0, 0.95);
+        background-color: rgba(226, 215, 215, 0.95);
     }
 }
 /* Solid black background when scrolled */
