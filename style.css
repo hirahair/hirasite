@@ -147,13 +147,13 @@ nav ul li a:hover {
 
 /* Active state */
 nav ul li a:active {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(216, 202, 202, 0.2);
 }
 
 @media (max-width: 768px) {
     /* Mobile menu styles - fix for dropdown content */
     nav.active {
-        background-color: rgba(0, 0, 0, 0.95);
+        background-color: rgba(221, 197, 197, 0.95);
     }
     
     nav.active ul li a {
