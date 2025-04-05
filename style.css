@@ -142,34 +142,13 @@ nav ul li a {
 
 /* Hover effect */
 nav ul li a:hover {
-    background-color: rgba(150, 121, 121, 0.952);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Active state */
 nav ul li a:active {
-    background-color: rgba(238, 216, 216, 0.623);
+    background-color: rgba(255, 255, 255, 0.2);
 }
-
-@media (max-width: 768px) {
-    /* Mobile menu styles - fix for dropdown content */
-    nav.active {
-        background-color: rgba(221, 197, 197, 0.95);
-    }
-    
-    nav.active ul li a {
-        color: var(--white) !important; /* Forces white text */
-        padding: 12px 0;
-        display: block;
-    }
-    
-    /* Optional: Add hover effect */
-    nav.active ul li a:hover {
-        color: var(--secondary) !important;
-    }
-}
-
-
-
 
 /* Text shadow for better visibility when transparent */
 header:not(.scrolled) nav ul li a {
@@ -235,39 +214,6 @@ header.sticky nav ul li a {
 }
 
 /* Hero section needs padding to account for header */
-
-
-
-
-/* Hero */
-#hero {
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-                url('images/hero-bg.jpg') no-repeat center center/cover;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: var(--white);
-}
-
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 20px;
-    position: relative;
-    z-index: 1;
-}
-
-#hero h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-#hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
 #hero {
     padding-top: 80px; /* This should match your header height */
     height: 100vh;
@@ -319,7 +265,6 @@ nav ul li a:hover {
     /* Always show background on mobile for better visibility */
     header {
         background-color: var(--dark-color);
-        color: var(--white); /* Ensure text is white */
     }
     
     /* Optional: Make mobile header slightly transparent */
