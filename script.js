@@ -176,7 +176,7 @@ $(window).scroll(function() {
         });
     }
 
-    // Populate gallery
+    // Populate gaallery
     if ($('.gallery-container').children().length === 0) {
         const galleryContainer = $('.gallery-container');
         galleryItems.forEach(item => {
