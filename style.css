@@ -298,6 +298,7 @@ nav ul li a:hover {
     /* Always show background on mobile for better visibility */
     header {
         background-color: var(--dark-color);
+        color: var(--white); /* Ensure text is white */
     }
     
     /* Optional: Make mobile header slightly transparent */
