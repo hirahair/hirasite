@@ -61,11 +61,11 @@ $(window).scroll(function() {
     const services = [
         {
             title: "HAIR CUT",
-            description: "Professional haircuts for all hair types and styles (Razer Cut - Most liked).",
+            description: "Professional haircuts for all hair types and styles.",
             icon: "fas fa-cut"
         },
         {
-            title: "HILIGHTING",
+            title: "COLORING",
             description: "1-Process, Partial Hilites, Full Hilites, and Cap Hilites.",
             icon: "fas fa-paint-brush"
         },
@@ -90,13 +90,13 @@ $(window).scroll(function() {
             icon: "fas fa-smile"
         },
         {
-            title: "THREADING",
-            description: "Brow threading",
+            title: "WAXING",
+            description: "Brow waxing, threading, and facial waxing services.",
             icon: "fas fa-eye"
         },
         {
             title: "MASSAGE",
-            description: "Sirodhara, Facial Massage, Katthi Bowl Massage, Singing Bowl Therapy, and Meditation",
+            description: "Sirodhara, Facial Massage, Singing Bowl Therapy, and Meditation",
             icon: "fas fa-hands"
         }
     ];
@@ -104,18 +104,18 @@ $(window).scroll(function() {
     // Testimonial data
     const testimonials = [
         {
-            content: "I have been going to Hira Hair Studio for 12 years and I would never go any where else. Song, the owner, does the best haircuts, color and highlights. She is always up to date on the latest hairstyles and products. ",
-            author: "Sandy Wilsonn",
+            content: "The best hair studio I've ever been to! The stylists are incredibly talented and professional.",
+            author: "Sarah Johnson",
             role: "Regular Client"
         },
         {
-            content: "I have been going to see Song for years. She can do anything with your hair. She is a true artist and a good person too!",
-            author: "Amanda Freer",
-            role: "Regular Client"
+            content: "My hair has never looked better. The coloring service is exceptional and lasts so long!",
+            author: "Michael Brown",
+            role: "New Client"
         },
         {
-            content: "Amazing - been going to Sangita for over 20 years!!! Not only great work but a great person.",
-            author: "Janice Yu Edwards",
+            content: "Friendly staff, clean environment, and amazing results every time. Highly recommend!",
+            author: "Emily Davis",
             role: "Long-time Client"
         }
     ];
