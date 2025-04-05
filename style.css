@@ -161,7 +161,7 @@ nav ul li a:hover {
         top: 80px;
         left: -100%;
         width: 100%;
-        background: rgba(0, 0, 0, 0.95);
+        background: rgba(196, 187, 187, 0.95);
         padding: 20px;
         transition: var(--transition);
     }
@@ -176,7 +176,7 @@ nav ul li a:hover {
     }
     
     nav ul li a {
-        color: var(--white); /* Ensure white text */
+        color: var(--white)!important; /* Ensure white text */
         padding: 12px 0;
         display: block;
         font-size: 1.1rem;
