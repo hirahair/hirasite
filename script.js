@@ -130,7 +130,14 @@ $(window).scroll(function() {
         { image: "images/gallery6.jpg", thumb: "images/gallery6.jpg", alt: "Color Highlights" },
         { image: "images/gallery7.jpg", thumb: "images/gallery7.jpg", alt: "Color Highlights" },
         { image: "images/gallery8.jpg", thumb: "images/gallery8.jpg", alt: "Color Highlights" },
-        { image: "images/gallery9.jpg", thumb: "images/gallery9.jpg", alt: "Color Highlights" }
+        { image: "images/gallery9.jpg", thumb: "images/gallery9.jpg", alt: "Bowl" },
+        { image: "images/gallery10.jpg", thumb: "images/gallery10.jpg", alt: "Meditation/Massage room" },
+        { image: "images/gallery11.jpg", thumb: "images/gallery11.jpg", alt: "Katthi Bowl" },
+        { image: "images/gallery12.jpg", thumb: "images/gallery12.jpg", alt: "Singing Bowl" },
+        { image: "images/gallery13.jpg", thumb: "images/gallery13.jpg", alt: "Showcase" },
+        { image: "images/gallery14.jpg", thumb: "images/gallery14.jpg", alt: "Waiting Room" },
+        { image: "images/gallery15.jpg", thumb: "images/gallery15.jpg", alt: "Bowl Sound" },
+        { image: "images/gallery16.jpg", thumb: "images/gallery16.jpg", alt: "Short Bob" }
 
     ];
 
