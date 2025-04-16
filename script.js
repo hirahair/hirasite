@@ -111,7 +111,7 @@ $(window).scroll(function() {
         {
             content: "I have been going to see Song for years. She can do anything with your hair. She is a true artist and a good person too!",
             author: "Amanda Freer",
-            role: "New Client"
+            role: "Long-time regular Client"
         },
         {
             content: "Amazing - been going to Sangita for over 20 years!!! Not only great work but a great person.",
