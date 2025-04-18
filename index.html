@@ -1,160 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hira Hair Studio - Premium Hair & Beauty Services</title>
-    <meta name="description" content="Professional hair and beauty services blending Eastern wellness traditions with modern techniques">
+    <meta
+      name="description"
+      content="Professional hair and beauty services blending Eastern wellness traditions with modern techniques"
+    />
 
-        <!-- Favicons -->
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png">
+    <!-- Favicons -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/logo.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo.png" />
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <div class="header-container">
-            <div class="logo-container">
-                <img src="images/logo.png" alt="Hira Hair Studio Logo" class="logo">
-                <h1>Hira Hair Studio</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
+      <div class="header-container">
+        <div class="logo-container">
+          <img src="images/logo.png" alt="Hira Hair Studio Logo" class="logo" />
+          <h1>Hira Hair Studio</h1>
         </div>
+        <nav>
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
     </header>
 
     <section id="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h2>Harmony Through Beauty</h2>
-            <p>Where transformations begin and beauty unfolds</p>
-            <a href="#contact" class="btn btn-large">Book an Appointment</a>
-        </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h2>Harmony Through Beauty</h2>
+        <p>Where transformations begin and beauty unfolds</p>
+        <a href="#contact" class="btn btn-large">Get In Touch</a>
+      </div>
     </section>
 
     <section id="services" class="section-padding">
-        <div class="section-header">
-            <h2>Our Services</h2>
-            <div class="divider"></div>
-        </div>
-        <div class="services-container"></div>
+      <div class="section-header">
+        <h2>Our Services</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="services-container"></div>
     </section>
 
     <section id="gallery" class="section-padding">
+      <section id="gallery" class="section-padding">
         <div class="section-header">
-            <h2>Gallery</h2>
-            <div class="divider"></div>
+          <h2>Gallery</h2>
+          <div class="divider"></div>
         </div>
-        <div class="gallery-container"></div>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides will be added dynamically -->
+          </div>
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </section>
 
     <section id="about" class="section-padding">
-        <div class="about-container">
-            <div class="about-content">
-                <div class="section-header">
-                    <h2>About Our Studio</h2>
-                    <div class="divider"></div>
-                </div>
-                <p>Hira Hair Studio has been providing exceptional hair and beauty services for over a decade. We provide tailored care, combining premium products with time-honored techniques to ensure exceptional results.</p>
-                <ul class="about-features">
-                    <li><i class="fas fa-check"></i> Serene sophistication</li>
-                    <li><i class="fas fa-check"></i> Precision Haircare</li>
-                    <li><i class="fas fa-check"></i> Personalized Service</li>
-                    <li><i class="fas fa-check"></i> Relaxing Atmosphere</li>
-                </ul>
-            </div>
-            <div class="about-image">
-                <img src="images/salon-interior.jpg" alt="Salon interior with relaxing ambiance">
-            </div>
+      <div class="about-container">
+        <div class="section-header">
+          <h2>About Our Studio</h2>
+          <div class="divider"></div>
         </div>
+        <div class="content-wrapper">
+          <div class="about-content">
+            <p>
+              Hira Hair Studio has been providing exceptional hair and beauty
+              services for over a decade. We provide tailored care, combining
+              premium products with time-honored techniques to ensure
+              exceptional results.
+            </p>
+            <ul class="about-features">
+              <li><i class="fas fa-check"></i> Serene sophistication</li>
+              <li><i class="fas fa-check"></i> Precision Haircare</li>
+              <li><i class="fas fa-check"></i> Personalized Service</li>
+              <li><i class="fas fa-check"></i> Relaxing Atmosphere</li>
+            </ul>
+          </div>
+          <div class="about-image">
+            <img
+              src="images/salon-interior.jpg"
+              alt="Salon interior with relaxing ambiance"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="testimonials" class="section-padding">
-        <div class="section-header">
-            <h2>Client Experiences</h2>
-            <div class="divider"></div>
-        </div>
-        <div class="testimonials-container"></div>
+      <div class="section-header">
+        <h2>Client Experiences</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="testimonials-container"></div>
     </section>
 
     <section id="contact" class="section-padding">
-        <div class="section-header">
-            <h2>Contact Us</h2>
-            <div class="divider"></div>
-        </div>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="get-in-touch">
-                    <h3>Get in Touch</h3>
-                    <p>Feel free to share your thoughts on our service. For more information, contact us.</p>
-                </div>
-                <div class="contact-details">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>847 N Highland AVE, Unit 4<br>Atlanta GA 30307</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>(404) 502-3866</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>hirahair@gmail.com</p>
-                    </div>
-                    <div class="info-item hours">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <p>Mon-Sat: 10AM - 6PM</p>
-                            <p>Sun: Closed</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="section-header">
+        <h2>Contact Us</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="get-in-touch">
+            <h3>Get in Touch</h3>
+            <p>
+              Feel free to share your thoughts on our service. For more
+              information, contact us.
+            </p>
+          </div>
+          <div class="contact-details">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>847 N Highland AVE, Unit 4<br />Atlanta GA 30307</p>
             </div>
-            <form class="contact-form" action="https://formspree.io/f/mqapyypy" method="post">
-                <div class="form-row">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    
-                </div>
-                <select name="service" required>
-                    <option value="" disabled selected>Select Service</option>
-                    <option value="haircut">Hair Cut</option>
-                    <option value="coloring">Highlights</option>
-                    <option value="styling">Styling</option>
-                    <option value="treatment">Treatment</option>
-                    <option value="massage">Massage/Meditation</option>
-                </select>
-                <textarea name="message" placeholder="Your Message (Include preferred date/time)" required></textarea>
-                <button type="submit" class="btn">SEND MESSAGE</button>
-            </form>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <p>(404) 502-3866</p>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <p>hirahair@gmail.com</p>
+            </div>
+            <div class="info-item hours">
+              <i class="fas fa-clock"></i>
+              <div>
+                <p>Mon-Sat: 10AM - 6PM</p>
+                <p>Sun: Closed</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/mqapyypy"
+          method="post"
+        >
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <!-- <div class="form-service">
+            <select name="service" required>
+              <option value="" disabled selected>Select Service</option>
+              <option value="haircut">Hair Cut</option>
+              <option value="coloring">Highlights</option>
+              <option value="styling">Styling</option>
+              <option value="treatment">Treatment</option>
+              <option value="massage">Massage/Meditation</option>
+            </select>
+          </div> -->
+          <div class="form-textarea">
+            <textarea
+              name="message"
+              placeholder="Your Message (Include preferred date/time)"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn">SEND MESSAGE</button>
+        </form>
+      </div>
     </section>
 
     <footer>
-        <div class="copyright">
-            <p>&copy; <span id="year"></span> Hira Hair Studio.</p>
-        </div>
+      <div class="copyright">
+        <p>&copy; <span id="year"></span> Hira Hair Studio.</p>
+      </div>
     </footer>
 
     <div class="scroll-up-btn">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

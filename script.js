@@ -1,35 +1,56 @@
-$(document).ready(function() {
+// Gallery data
+const galleryItems = [
+    { image: "images/gallery1.jpg", thumb: "images/gallery1.jpg", alt: "Hair Styling" },
+    { image: "images/gallery2.jpg", thumb: "images/gallery2.jpg", alt: "Hair Coloring" },
+    { image: "images/gallery3.jpg", thumb: "images/gallery3.jpg", alt: "Hair Treatment" },
+    { image: "images/gallery4.jpg", thumb: "images/gallery4.jpg", alt: "Bridal Hairstyle" },
+    { image: "images/gallery5.jpg", thumb: "images/gallery5.jpg", alt: "Men's Haircut" },
+    { image: "images/gallery6.jpg", thumb: "images/gallery6.jpg", alt: "Color Highlights" },
+    { image: "images/gallery7.jpg", thumb: "images/gallery7.jpg", alt: "Color Highlights" },
+    { image: "images/gallery8.jpg", thumb: "images/gallery8.jpg", alt: "Color Highlights" },
+    { image: "images/gallery16.jpg", thumb: "images/gallery16.jpg", alt: "Short Bob" },
+    { image: "images/gallery9.jpg", thumb: "images/gallery9.jpg", alt: "Bowl" },
+    { image: "images/gallery10.jpg", thumb: "images/gallery10.jpg", alt: "Meditation/Massage room" },
+    { image: "images/gallery11.jpg", thumb: "images/gallery11.jpg", alt: "Katthi Bowl" },
+    { image: "images/gallery12.jpg", thumb: "images/gallery12.jpg", alt: "Singing Bowl" },
+    { image: "images/gallery13.jpg", thumb: "images/gallery13.jpg", alt: "Showcase" },
+    { image: "images/gallery14.jpg", thumb: "images/gallery14.jpg", alt: "Waiting Room" },
+    { image: "images/gallery15.jpg", thumb: "images/gallery15.jpg", alt: "Bowl Sound" },
+
+];
+
+$(document).ready(function () {
     // Mobile menu toggle
-    $('.mobile-menu-btn').click(function() {
+    $('.mobile-menu-btn').click(function () {
         $('nav').toggleClass('active');
         $(this).find('i').toggleClass('fa-times fa-bars');
     });
 
-// Sticky header with transparency effect
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-        $('header').addClass('sticky');
-    } else {
-        $('header').removeClass('sticky');
-    }
-});
-// Header scroll effect
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 30) { // Triggers after 30px of scrolling
-        $('header').addClass('scrolled');
-    } else {
-        $('header').removeClass('scrolled');
-    }
-});
-
-    // Sticky header
-    $(window).scroll(function() {
+    // Sticky header with transparency effect
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             $('header').addClass('sticky');
         } else {
             $('header').removeClass('sticky');
         }
-        
+    });
+    // Header scroll effect
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 30) { // Triggers after 30px of scrolling
+            $('header').addClass('scrolled');
+        } else {
+            $('header').removeClass('scrolled');
+        }
+    });
+
+    // Sticky header
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('header').addClass('sticky');
+        } else {
+            $('header').removeClass('sticky');
+        }
+
         // Scroll up button
         if ($(this).scrollTop() > 300) {
             $('.scroll-up-btn').addClass('active');
@@ -39,7 +60,7 @@ $(window).scroll(function() {
     });
 
     // Smooth scrolling
-    $('a[href*="#"]').on('click', function(e) {
+    $('a[href*="#"]').on('click', function (e) {
         e.preventDefault();
         $('nav').removeClass('active');
         $('.mobile-menu-btn i').removeClass('fa-times').addClass('fa-bars');
@@ -49,8 +70,8 @@ $(window).scroll(function() {
     });
 
     // Scroll up button
-    $('.scroll-up-btn').click(function() {
-        $('html, body').animate({scrollTop: 0}, 'slow');
+    $('.scroll-up-btn').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 'slow');
         return false;
     });
 
@@ -120,26 +141,7 @@ $(window).scroll(function() {
         }
     ];
 
-    // Gallery data
-    const galleryItems = [
-        { image: "images/gallery1.jpg", thumb: "images/gallery1.jpg", alt: "Hair Styling" },
-        { image: "images/gallery2.jpg", thumb: "images/gallery2.jpg", alt: "Hair Coloring" },
-        { image: "images/gallery3.jpg", thumb: "images/gallery3.jpg", alt: "Hair Treatment" },
-        { image: "images/gallery4.jpg", thumb: "images/gallery4.jpg", alt: "Bridal Hairstyle" },
-        { image: "images/gallery5.jpg", thumb: "images/gallery5.jpg", alt: "Men's Haircut" },
-        { image: "images/gallery6.jpg", thumb: "images/gallery6.jpg", alt: "Color Highlights" },
-        { image: "images/gallery7.jpg", thumb: "images/gallery7.jpg", alt: "Color Highlights" },
-        { image: "images/gallery8.jpg", thumb: "images/gallery8.jpg", alt: "Color Highlights" },
-        { image: "images/gallery9.jpg", thumb: "images/gallery9.jpg", alt: "Bowl" },
-        { image: "images/gallery10.jpg", thumb: "images/gallery10.jpg", alt: "Meditation/Massage room" },
-        { image: "images/gallery11.jpg", thumb: "images/gallery11.jpg", alt: "Katthi Bowl" },
-        { image: "images/gallery12.jpg", thumb: "images/gallery12.jpg", alt: "Singing Bowl" },
-        { image: "images/gallery13.jpg", thumb: "images/gallery13.jpg", alt: "Showcase" },
-        { image: "images/gallery14.jpg", thumb: "images/gallery14.jpg", alt: "Waiting Room" },
-        { image: "images/gallery15.jpg", thumb: "images/gallery15.jpg", alt: "Bowl Sound" },
-        { image: "images/gallery16.jpg", thumb: "images/gallery16.jpg", alt: "Short Bob" }
 
-    ];
 
     // Populate services
     if ($('.services-container').children().length === 0) {
@@ -165,7 +167,7 @@ $(window).scroll(function() {
                         <p>"${testimonial.content}"</p>
                     </div>
                     <div class="testimonial-author">
-                        <img src="images/client-${testimonials.indexOf(testimonial)+1}.jpg" alt="${testimonial.author}">
+                        <img src="images/client-${testimonials.indexOf(testimonial) + 1}.jpg" alt="${testimonial.author}">
                         <div class="author-info">
                             <h4>${testimonial.author}</h4>
                             <span>${testimonial.role}</span>
@@ -175,33 +177,63 @@ $(window).scroll(function() {
             `);
         });
     }
-
-    // Populate gaallery
-    if ($('.gallery-container').children().length === 0) {
-        const galleryContainer = $('.gallery-container');
-        galleryItems.forEach(item => {
-            galleryContainer.append(`
-                <a href="${item.image}" class="gallery-item">
-                    <img src="${item.thumb}" alt="${item.alt}">
-                    <div class="overlay">
-                        <i class="fas fa-search-plus"></i>
-                    </div>
-                </a>
-            `);
-        });
-
-        // Initialize lightbox
-        $('.gallery-container').magnificPopup({
-            delegate: 'a',
-            type: 'image',
-            gallery: {
-                enabled: true
-            },
-            image: {
-                titleSrc: function(item) {
-                    return item.el.find('img').attr('alt');
-                }
-            }
-        });
-    }
 });
+
+
+// Populate gallery
+if ($('.swiper-wrapper').children().length === 0) {
+    const galleryContainer = $('.swiper-wrapper');
+    galleryItems.forEach(item => {
+        galleryContainer.append(`
+            <div class="swiper-slide">
+                <img src="${item.thumb}" alt="${item.alt}">
+            </div>
+        `);
+    });
+
+    // Initialize Swiper
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 20,
+            stretch: 0,
+            depth: 200,
+            modifier: 1,
+            slideShadows: true,
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        // Pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        // Responsive breakpoints
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+        }
+    });
+}
