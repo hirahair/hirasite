@@ -5,8 +5,8 @@ const galleryItems = [
     { image: "images/gallery3.jpg", thumb: "images/gallery3.jpg", alt: "Hair Treatment" },
     { image: "images/gallery4.jpg", thumb: "images/gallery4.jpg", alt: "Bridal Hairstyle" },
     { image: "images/gallery5.jpg", thumb: "images/gallery5.jpg", alt: "Men's Haircut" },
-    { image: "images/gallery6.jpg", thumb: "images/gallery6.jpg", alt: "Color Highlights" },
-    { image: "images/gallery7.jpg", thumb: "images/gallery7.jpg", alt: "Color Highlights" },
+    // { image: "images/gallery6.jpg", thumb: "images/gallery6.jpg", alt: "Color Highlights" },
+    // { image: "images/gallery7.jpg", thumb: "images/gallery7.jpg", alt: "Color Highlights" },
     { image: "images/gallery8.jpg", thumb: "images/gallery8.jpg", alt: "Color Highlights" },
     { image: "images/gallery16.jpg", thumb: "images/gallery16.jpg", alt: "Short Bob" },
     { image: "images/gallery9.jpg", thumb: "images/gallery9.jpg", alt: "Bowl" },
@@ -86,7 +86,7 @@ $(document).ready(function () {
             icon: "fas fa-cut"
         },
         {
-            title: "HILIGHTING",
+            title: "HIGHLIGHTING",
             description: "1-Process, Partial Highlights, Full Highlights, and Cap Highlights.",
             icon: "fas fa-paint-brush"
         },
