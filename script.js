@@ -127,17 +127,17 @@ $(document).ready(function () {
         {
             content: "I have been going to Hira Hair Studio for 12 years and I would never go any where else. Song, the owner, does the best haircuts, color and highlights. She is always up to date on the latest hairstyles and products. I would recommend.",
             author: "Sandy Wilson",
-            role: "Regular Client"
+            role: " "
         },
         {
             content: "I have been going to see Song for years. She can do anything with your hair. She is a true artist and a good person too!",
             author: "Amanda Freer",
-            role: "Long-time regular Client"
+            role: " "
         },
         {
             content: "Amazing - been going to Sangita for over 20 years!!! Not only great work but a great person.",
             author: "Janice Yu Edwards",
-            role: "Long-time Client"
+            role: " "
         }
     ];
 
